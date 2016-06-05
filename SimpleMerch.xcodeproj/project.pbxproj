@@ -29,6 +29,10 @@
 		F533F3CE1D06558D005EF5E2 /* _SMAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3C91D06558D005EF5E2 /* _SMAmount.m */; };
 		F533F3CF1D06558D005EF5E2 /* _SMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3CB1D06558D005EF5E2 /* _SMCategory.m */; };
 		F533F3D11D0655D0005EF5E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F533F3D01D0655D0005EF5E2 /* Podfile */; };
+		F533F3A21D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3A11D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m */; };
+		F533F3A51D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3A41D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m */; };
+		F533F3A81D04D0B6005EF5E2 /* SMGlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3A71D04D0B6005EF5E2 /* SMGlobalConstants.m */; };
+		F533F3AB1D04D9AE005EF5E2 /* SMCategoryTypePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3AA1D04D9AE005EF5E2 /* SMCategoryTypePickerViewController.m */; };
 		F575F79D1D03BE9200B70BB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F79C1D03BE9200B70BB3 /* main.m */; };
 		F575F7A01D03BE9200B70BB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F79F1D03BE9200B70BB3 /* AppDelegate.m */; };
 		F575F7A91D03BE9200B70BB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F575F7A71D03BE9200B70BB3 /* Main.storyboard */; };
@@ -66,6 +70,15 @@
 		F533F3CA1D06558D005EF5E2 /* _SMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SMCategory.h; sourceTree = "<group>"; };
 		F533F3CB1D06558D005EF5E2 /* _SMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SMCategory.m; sourceTree = "<group>"; };
 		F533F3D01D0655D0005EF5E2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F533F3A01D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		F533F3A11D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		F533F3A31D04C8FC005EF5E2 /* SMNewMerchandiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMNewMerchandiseViewController.h; sourceTree = "<group>"; };
+		F533F3A41D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMNewMerchandiseViewController.m; sourceTree = "<group>"; };
+		F533F3A61D04D0B6005EF5E2 /* SMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMGlobalConstants.h; sourceTree = "<group>"; };
+		F533F3A71D04D0B6005EF5E2 /* SMGlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMGlobalConstants.m; sourceTree = "<group>"; };
+		F533F3A91D04D9AE005EF5E2 /* SMCategoryTypePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryTypePickerViewController.h; sourceTree = "<group>"; };
+		F533F3AA1D04D9AE005EF5E2 /* SMCategoryTypePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryTypePickerViewController.m; sourceTree = "<group>"; };
+		F533F3AC1D04DA15005EF5E2 /* SMCategoryTypePickerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMCategoryTypePickerProtocol.h; sourceTree = "<group>"; };
 		F575F7981D03BE9200B70BB3 /* SimpleMerch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMerch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F575F79C1D03BE9200B70BB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F575F79E1D03BE9200B70BB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,9 +167,19 @@
 			path = MachineFiles;
 			sourceTree = "<group>";
 		};
+		F533F39F1D03D49E005EF5E2 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F533F3A01D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.h */,
+				F533F3A11D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		F541C0E11D03C73F005DA64F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F533F3AC1D04DA15005EF5E2 /* SMCategoryTypePickerProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -188,6 +211,7 @@
 				F575F79E1D03BE9200B70BB3 /* AppDelegate.h */,
 				F575F79F1D03BE9200B70BB3 /* AppDelegate.m */,
 				F533F3B51D0654C5005EF5E2 /* Model */,
+				F533F39F1D03D49E005EF5E2 /* CollectionViewCells */,
 				F541C0E11D03C73F005DA64F /* Protocols */,
 				F575F7A71D03BE9200B70BB3 /* Main.storyboard */,
 				F575F7C61D03C05400B70BB3 /* ViewControllers */,
@@ -204,6 +228,8 @@
 			children = (
 				F575F79C1D03BE9200B70BB3 /* main.m */,
 				F533F3B21D06524D005EF5E2 /* SimpleMerch.xcdatamodeld */,
+				F533F3A61D04D0B6005EF5E2 /* SMGlobalConstants.h */,
+				F533F3A71D04D0B6005EF5E2 /* SMGlobalConstants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,6 +250,10 @@
 				F575F7C81D03C05400B70BB3 /* SMMerchandiseViewController.m */,
 				F575F7C91D03C05400B70BB3 /* SecondViewController.h */,
 				F575F7CA1D03C05400B70BB3 /* SecondViewController.m */,
+				F533F3A31D04C8FC005EF5E2 /* SMNewMerchandiseViewController.h */,
+				F533F3A41D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m */,
+				F533F3A91D04D9AE005EF5E2 /* SMCategoryTypePickerViewController.h */,
+				F533F3AA1D04D9AE005EF5E2 /* SMCategoryTypePickerViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -448,12 +478,16 @@
 				F533F3CD1D06558D005EF5E2 /* SMCategory.m in Sources */,
 				F533F3CE1D06558D005EF5E2 /* _SMAmount.m in Sources */,
 				F533F3CC1D06558D005EF5E2 /* SMAmount.m in Sources */,
+				F533F3A81D04D0B6005EF5E2 /* SMGlobalConstants.m in Sources */,
 				F575F7CC1D03C05400B70BB3 /* SecondViewController.m in Sources */,
 				F575F7A01D03BE9200B70BB3 /* AppDelegate.m in Sources */,
 				F533F3CF1D06558D005EF5E2 /* _SMCategory.m in Sources */,
 				F533F3B41D06524D005EF5E2 /* SimpleMerch.xcdatamodeld in Sources */,
 				F575F7CB1D03C05400B70BB3 /* SMMerchandiseViewController.m in Sources */,
 				F575F79D1D03BE9200B70BB3 /* main.m in Sources */,
+				F533F3A21D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m in Sources */,
+				F533F3AB1D04D9AE005EF5E2 /* SMCategoryTypePickerViewController.m in Sources */,
+				F533F3A51D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "SMGlobalConstants.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSArray *categoryTypesArray = [[NSUserDefaults standardUserDefaults] objectForKey:kSmaCategoryTypesKey];
+    if (!categoryTypesArray || categoryTypesArray.count == 0) {
+        categoryTypesArray = @[@"Clothing", @"CDs", @"Vinyl", @"Other"];
+        [[NSUserDefaults standardUserDefaults] setObject:categoryTypesArray forKey:kSmaCategoryTypesKey];
+    }
     return YES;
 }
 
