@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F541C0E51D03C8FD005DA64F /* SMAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = F541C0E41D03C8FD005DA64F /* SMAmount.m */; };
 		F575F79D1D03BE9200B70BB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F79C1D03BE9200B70BB3 /* main.m */; };
 		F575F7A01D03BE9200B70BB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F79F1D03BE9200B70BB3 /* AppDelegate.m */; };
 		F575F7A91D03BE9200B70BB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F575F7A71D03BE9200B70BB3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		F575F7B91D03BE9200B70BB3 /* SimpleMerchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7B81D03BE9200B70BB3 /* SimpleMerchTests.m */; };
 		F575F7CB1D03C05400B70BB3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7C81D03C05400B70BB3 /* FirstViewController.m */; };
 		F575F7CC1D03C05400B70BB3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7CA1D03C05400B70BB3 /* SecondViewController.m */; };
+		F575F7D01D03C0E900B70BB3 /* SMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7CF1D03C0E900B70BB3 /* SMCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F541C0E31D03C8FD005DA64F /* SMAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAmount.h; sourceTree = "<group>"; };
+		F541C0E41D03C8FD005DA64F /* SMAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAmount.m; sourceTree = "<group>"; };
 		F575F7981D03BE9200B70BB3 /* SimpleMerch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMerch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F575F79C1D03BE9200B70BB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F575F79E1D03BE9200B70BB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 		F575F7C81D03C05400B70BB3 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		F575F7C91D03C05400B70BB3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		F575F7CA1D03C05400B70BB3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F575F7CE1D03C0E900B70BB3 /* SMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategory.h; sourceTree = "<group>"; };
+		F575F7CF1D03C0E900B70BB3 /* SMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F541C0E11D03C73F005DA64F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F575F78F1D03BE9200B70BB3 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +99,7 @@
 			children = (
 				F575F79E1D03BE9200B70BB3 /* AppDelegate.h */,
 				F575F79F1D03BE9200B70BB3 /* AppDelegate.m */,
+				F541C0E11D03C73F005DA64F /* Protocols */,
 				F575F7CD1D03C0AB00B70BB3 /* Models */,
 				F575F7A71D03BE9200B70BB3 /* Main.storyboard */,
 				F575F7C61D03C05400B70BB3 /* ViewControllers */,
@@ -128,6 +142,10 @@
 		F575F7CD1D03C0AB00B70BB3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F575F7CE1D03C0E900B70BB3 /* SMCategory.h */,
+				F575F7CF1D03C0E900B70BB3 /* SMCategory.m */,
+				F541C0E31D03C8FD005DA64F /* SMAmount.h */,
+				F541C0E41D03C8FD005DA64F /* SMAmount.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,9 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F575F7CC1D03C05400B70BB3 /* SecondViewController.m in Sources */,
+				F541C0E51D03C8FD005DA64F /* SMAmount.m in Sources */,
 				F575F7A01D03BE9200B70BB3 /* AppDelegate.m in Sources */,
 				F575F7CB1D03C05400B70BB3 /* FirstViewController.m in Sources */,
 				F575F79D1D03BE9200B70BB3 /* main.m in Sources */,
+				F575F7D01D03C0E900B70BB3 /* SMCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = SimpleMerch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seionicllc.SimpleMerch;
@@ -376,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = SimpleMerch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seionicllc.SimpleMerch;
@@ -426,6 +448,7 @@
 				F575F7BF1D03BE9200B70BB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F575F7C01D03BE9200B70BB3 /* Build configuration list for PBXNativeTarget "SimpleMerchTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +457,7 @@
 				F575F7C21D03BE9200B70BB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
