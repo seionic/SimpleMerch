@@ -6,13 +6,13 @@
 //  Copyright © 2016 Seiler Hagan. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "SMMerchandiseViewController.h"
 
-@interface FirstViewController ()
+@interface SMMerchandiseViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation SMMerchandiseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

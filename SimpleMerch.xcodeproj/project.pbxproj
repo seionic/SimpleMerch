@@ -35,7 +35,7 @@
 		F575F7AB1D03BE9200B70BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F575F7AA1D03BE9200B70BB3 /* Assets.xcassets */; };
 		F575F7AE1D03BE9200B70BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F575F7AC1D03BE9200B70BB3 /* LaunchScreen.storyboard */; };
 		F575F7B91D03BE9200B70BB3 /* SimpleMerchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7B81D03BE9200B70BB3 /* SimpleMerchTests.m */; };
-		F575F7CB1D03C05400B70BB3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7C81D03C05400B70BB3 /* FirstViewController.m */; };
+		F575F7CB1D03C05400B70BB3 /* SMMerchandiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7C81D03C05400B70BB3 /* SMMerchandiseViewController.m */; };
 		F575F7CC1D03C05400B70BB3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7CA1D03C05400B70BB3 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -77,8 +77,8 @@
 		F575F7B41D03BE9200B70BB3 /* SimpleMerchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMerchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F575F7B81D03BE9200B70BB3 /* SimpleMerchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleMerchTests.m; sourceTree = "<group>"; };
 		F575F7BA1D03BE9200B70BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F575F7C71D03C05400B70BB3 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F575F7C81D03C05400B70BB3 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F575F7C71D03C05400B70BB3 /* SMMerchandiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMerchandiseViewController.h; sourceTree = "<group>"; };
+		F575F7C81D03C05400B70BB3 /* SMMerchandiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMerchandiseViewController.m; sourceTree = "<group>"; };
 		F575F7C91D03C05400B70BB3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		F575F7CA1D03C05400B70BB3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,8 +220,8 @@
 		F575F7C61D03C05400B70BB3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F575F7C71D03C05400B70BB3 /* FirstViewController.h */,
-				F575F7C81D03C05400B70BB3 /* FirstViewController.m */,
+				F575F7C71D03C05400B70BB3 /* SMMerchandiseViewController.h */,
+				F575F7C81D03C05400B70BB3 /* SMMerchandiseViewController.m */,
 				F575F7C91D03C05400B70BB3 /* SecondViewController.h */,
 				F575F7CA1D03C05400B70BB3 /* SecondViewController.m */,
 			);
@@ -450,9 +450,9 @@
 				F533F3CC1D06558D005EF5E2 /* SMAmount.m in Sources */,
 				F575F7CC1D03C05400B70BB3 /* SecondViewController.m in Sources */,
 				F575F7A01D03BE9200B70BB3 /* AppDelegate.m in Sources */,
-				F575F7CB1D03C05400B70BB3 /* FirstViewController.m in Sources */,
 				F533F3CF1D06558D005EF5E2 /* _SMCategory.m in Sources */,
 				F533F3B41D06524D005EF5E2 /* SimpleMerch.xcdatamodeld in Sources */,
+				F575F7CB1D03C05400B70BB3 /* SMMerchandiseViewController.m in Sources */,
 				F575F79D1D03BE9200B70BB3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
