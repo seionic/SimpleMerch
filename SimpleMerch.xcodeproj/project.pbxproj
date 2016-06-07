@@ -6,8 +6,29 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F533F3AD1D065202005EF5E2 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F533F3B01D065202005EF5E2 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				F533F3B11D065207005EF5E2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		F541C0E51D03C8FD005DA64F /* SMAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = F541C0E41D03C8FD005DA64F /* SMAmount.m */; };
+		294A1E7771F659E0BF56644D /* libPods-SimpleMerch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03997255BA6C9923E7CDDB88 /* libPods-SimpleMerch.a */; };
+		68677BE8AF1A420167EA9697 /* libPods-SimpleMerchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EB72AC97881747976FBC22 /* libPods-SimpleMerchTests.a */; };
+		F533F3B41D06524D005EF5E2 /* SimpleMerch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F533F3B21D06524D005EF5E2 /* SimpleMerch.xcdatamodeld */; };
+		F533F3CC1D06558D005EF5E2 /* SMAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3C41D06558D005EF5E2 /* SMAmount.m */; };
+		F533F3CD1D06558D005EF5E2 /* SMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3C61D06558D005EF5E2 /* SMCategory.m */; };
+		F533F3CE1D06558D005EF5E2 /* _SMAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3C91D06558D005EF5E2 /* _SMAmount.m */; };
+		F533F3CF1D06558D005EF5E2 /* _SMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3CB1D06558D005EF5E2 /* _SMCategory.m */; };
+		F533F3D11D0655D0005EF5E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F533F3D01D0655D0005EF5E2 /* Podfile */; };
 		F575F79D1D03BE9200B70BB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F79C1D03BE9200B70BB3 /* main.m */; };
 		F575F7A01D03BE9200B70BB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F79F1D03BE9200B70BB3 /* AppDelegate.m */; };
 		F575F7A91D03BE9200B70BB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F575F7A71D03BE9200B70BB3 /* Main.storyboard */; };
@@ -16,7 +37,6 @@
 		F575F7B91D03BE9200B70BB3 /* SimpleMerchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7B81D03BE9200B70BB3 /* SimpleMerchTests.m */; };
 		F575F7CB1D03C05400B70BB3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7C81D03C05400B70BB3 /* FirstViewController.m */; };
 		F575F7CC1D03C05400B70BB3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7CA1D03C05400B70BB3 /* SecondViewController.m */; };
-		F575F7D01D03C0E900B70BB3 /* SMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7CF1D03C0E900B70BB3 /* SMCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +50,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F541C0E31D03C8FD005DA64F /* SMAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAmount.h; sourceTree = "<group>"; };
-		F541C0E41D03C8FD005DA64F /* SMAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAmount.m; sourceTree = "<group>"; };
+		03997255BA6C9923E7CDDB88 /* libPods-SimpleMerch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleMerch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48EB72AC97881747976FBC22 /* libPods-SimpleMerchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleMerchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		650F1A0328F7E9EF5CA65C5C /* Pods-SimpleMerchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMerchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMerchTests/Pods-SimpleMerchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AEA6F98FE03282D35FF4A18 /* Pods-SimpleMerch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMerch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMerch/Pods-SimpleMerch.debug.xcconfig"; sourceTree = "<group>"; };
+		E02A29E38125BC021803C1E6 /* Pods-SimpleMerch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMerch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMerch/Pods-SimpleMerch.release.xcconfig"; sourceTree = "<group>"; };
+		F50F02329BF8EF5023CFFE84 /* Pods-SimpleMerchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMerchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMerchTests/Pods-SimpleMerchTests.release.xcconfig"; sourceTree = "<group>"; };
+		F533F3B31D06524D005EF5E2 /* SimpleMerch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleMerch.xcdatamodel; sourceTree = "<group>"; };
+		F533F3C31D06558D005EF5E2 /* SMAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAmount.h; sourceTree = "<group>"; };
+		F533F3C41D06558D005EF5E2 /* SMAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAmount.m; sourceTree = "<group>"; };
+		F533F3C51D06558D005EF5E2 /* SMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategory.h; sourceTree = "<group>"; };
+		F533F3C61D06558D005EF5E2 /* SMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategory.m; sourceTree = "<group>"; };
+		F533F3C81D06558D005EF5E2 /* _SMAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SMAmount.h; sourceTree = "<group>"; };
+		F533F3C91D06558D005EF5E2 /* _SMAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SMAmount.m; sourceTree = "<group>"; };
+		F533F3CA1D06558D005EF5E2 /* _SMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SMCategory.h; sourceTree = "<group>"; };
+		F533F3CB1D06558D005EF5E2 /* _SMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SMCategory.m; sourceTree = "<group>"; };
+		F533F3D01D0655D0005EF5E2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		F575F7981D03BE9200B70BB3 /* SimpleMerch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMerch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F575F79C1D03BE9200B70BB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F575F79E1D03BE9200B70BB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,8 +81,6 @@
 		F575F7C81D03C05400B70BB3 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		F575F7C91D03C05400B70BB3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		F575F7CA1D03C05400B70BB3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		F575F7CE1D03C0E900B70BB3 /* SMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategory.h; sourceTree = "<group>"; };
-		F575F7CF1D03C0E900B70BB3 /* SMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294A1E7771F659E0BF56644D /* libPods-SimpleMerch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +96,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68677BE8AF1A420167EA9697 /* libPods-SimpleMerchTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FA4CD5828C9C2D27E6F2EC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AEA6F98FE03282D35FF4A18 /* Pods-SimpleMerch.debug.xcconfig */,
+				E02A29E38125BC021803C1E6 /* Pods-SimpleMerch.release.xcconfig */,
+				650F1A0328F7E9EF5CA65C5C /* Pods-SimpleMerchTests.debug.xcconfig */,
+				F50F02329BF8EF5023CFFE84 /* Pods-SimpleMerchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8EF4830E8A3B5FAC9F76883F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03997255BA6C9923E7CDDB88 /* libPods-SimpleMerch.a */,
+				48EB72AC97881747976FBC22 /* libPods-SimpleMerchTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F533F3B51D0654C5005EF5E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F533F3C21D06558D005EF5E2 /* HumanFiles */,
+				F533F3C71D06558D005EF5E2 /* MachineFiles */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F533F3C21D06558D005EF5E2 /* HumanFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F533F3C31D06558D005EF5E2 /* SMAmount.h */,
+				F533F3C41D06558D005EF5E2 /* SMAmount.m */,
+				F533F3C51D06558D005EF5E2 /* SMCategory.h */,
+				F533F3C61D06558D005EF5E2 /* SMCategory.m */,
+			);
+			path = HumanFiles;
+			sourceTree = "<group>";
+		};
+		F533F3C71D06558D005EF5E2 /* MachineFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F533F3C81D06558D005EF5E2 /* _SMAmount.h */,
+				F533F3C91D06558D005EF5E2 /* _SMAmount.m */,
+				F533F3CA1D06558D005EF5E2 /* _SMCategory.h */,
+				F533F3CB1D06558D005EF5E2 /* _SMCategory.m */,
+			);
+			path = MachineFiles;
+			sourceTree = "<group>";
+		};
 		F541C0E11D03C73F005DA64F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +164,12 @@
 		F575F78F1D03BE9200B70BB3 = {
 			isa = PBXGroup;
 			children = (
+				F533F3D01D0655D0005EF5E2 /* Podfile */,
 				F575F79A1D03BE9200B70BB3 /* SimpleMerch */,
 				F575F7B71D03BE9200B70BB3 /* SimpleMerchTests */,
 				F575F7991D03BE9200B70BB3 /* Products */,
+				5FA4CD5828C9C2D27E6F2EC5 /* Pods */,
+				8EF4830E8A3B5FAC9F76883F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +187,8 @@
 			children = (
 				F575F79E1D03BE9200B70BB3 /* AppDelegate.h */,
 				F575F79F1D03BE9200B70BB3 /* AppDelegate.m */,
+				F533F3B51D0654C5005EF5E2 /* Model */,
 				F541C0E11D03C73F005DA64F /* Protocols */,
-				F575F7CD1D03C0AB00B70BB3 /* Models */,
 				F575F7A71D03BE9200B70BB3 /* Main.storyboard */,
 				F575F7C61D03C05400B70BB3 /* ViewControllers */,
 				F575F7AA1D03BE9200B70BB3 /* Assets.xcassets */,
@@ -115,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				F575F79C1D03BE9200B70BB3 /* main.m */,
+				F533F3B21D06524D005EF5E2 /* SimpleMerch.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -139,17 +228,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		F575F7CD1D03C0AB00B70BB3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F575F7CE1D03C0E900B70BB3 /* SMCategory.h */,
-				F575F7CF1D03C0E900B70BB3 /* SMCategory.m */,
-				F541C0E31D03C8FD005DA64F /* SMAmount.h */,
-				F541C0E41D03C8FD005DA64F /* SMAmount.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F575F7BD1D03BE9200B70BB3 /* Build configuration list for PBXNativeTarget "SimpleMerch" */;
 			buildPhases = (
+				D0431B3E7D0E34D9033EA75B /* [CP] Check Pods Manifest.lock */,
 				F575F7941D03BE9200B70BB3 /* Sources */,
 				F575F7951D03BE9200B70BB3 /* Frameworks */,
 				F575F7961D03BE9200B70BB3 /* Resources */,
+				B403C92A1FEA2D96EA3D8949 /* [CP] Embed Pods Frameworks */,
+				9666822602D4EA255FA96B69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F575F7C01D03BE9200B70BB3 /* Build configuration list for PBXNativeTarget "SimpleMerchTests" */;
 			buildPhases = (
+				2272757669221B7EF1C946E8 /* [CP] Check Pods Manifest.lock */,
 				F575F7B01D03BE9200B70BB3 /* Sources */,
 				F575F7B11D03BE9200B70BB3 /* Frameworks */,
 				F575F7B21D03BE9200B70BB3 /* Resources */,
+				FD28931D8A0C8F74217E83DE /* [CP] Embed Pods Frameworks */,
+				6D78D9103BC79328F3261A3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +281,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Seiler Hagan";
 				TargetAttributes = {
+					F533F3AD1D065202005EF5E2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					F575F7971D03BE9200B70BB3 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -219,6 +306,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				F533F3AD1D065202005EF5E2 /* Mogenerator */,
 				F575F7971D03BE9200B70BB3 /* SimpleMerch */,
 				F575F7B31D03BE9200B70BB3 /* SimpleMerchTests */,
 			);
@@ -232,6 +320,7 @@
 			files = (
 				F575F7AE1D03BE9200B70BB3 /* LaunchScreen.storyboard in Resources */,
 				F575F7AB1D03BE9200B70BB3 /* Assets.xcassets in Resources */,
+				F533F3D11D0655D0005EF5E2 /* Podfile in Resources */,
 				F575F7A91D03BE9200B70BB3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,17 +334,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2272757669221B7EF1C946E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D78D9103BC79328F3261A3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleMerchTests/Pods-SimpleMerchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9666822602D4EA255FA96B69 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleMerch/Pods-SimpleMerch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B403C92A1FEA2D96EA3D8949 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleMerch/Pods-SimpleMerch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0431B3E7D0E34D9033EA75B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F533F3B11D065207005EF5E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m SimpleMerch/SimpleMerch.xcdatamodeld --machine-dir SimpleMerch/Model/MachineFiles --human-dir SimpleMerch/Model/HumanFiles --template-var arc=true\n";
+		};
+		FD28931D8A0C8F74217E83DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleMerchTests/Pods-SimpleMerchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F575F7941D03BE9200B70BB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F533F3CD1D06558D005EF5E2 /* SMCategory.m in Sources */,
+				F533F3CE1D06558D005EF5E2 /* _SMAmount.m in Sources */,
+				F533F3CC1D06558D005EF5E2 /* SMAmount.m in Sources */,
 				F575F7CC1D03C05400B70BB3 /* SecondViewController.m in Sources */,
-				F541C0E51D03C8FD005DA64F /* SMAmount.m in Sources */,
 				F575F7A01D03BE9200B70BB3 /* AppDelegate.m in Sources */,
 				F575F7CB1D03C05400B70BB3 /* FirstViewController.m in Sources */,
+				F533F3CF1D06558D005EF5E2 /* _SMCategory.m in Sources */,
+				F533F3B41D06524D005EF5E2 /* SimpleMerch.xcdatamodeld in Sources */,
 				F575F79D1D03BE9200B70BB3 /* main.m in Sources */,
-				F575F7D01D03C0E900B70BB3 /* SMCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +495,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F533F3AE1D065202005EF5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F533F3AF1D065202005EF5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F575F7BB1D03BE9200B70BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -383,6 +595,7 @@
 		};
 		F575F7BE1D03BE9200B70BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AEA6F98FE03282D35FF4A18 /* Pods-SimpleMerch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -395,6 +608,7 @@
 		};
 		F575F7BF1D03BE9200B70BB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02A29E38125BC021803C1E6 /* Pods-SimpleMerch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -407,6 +621,7 @@
 		};
 		F575F7C11D03BE9200B70BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650F1A0328F7E9EF5CA65C5C /* Pods-SimpleMerchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SimpleMerchTests/Info.plist;
@@ -419,6 +634,7 @@
 		};
 		F575F7C21D03BE9200B70BB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50F02329BF8EF5023CFFE84 /* Pods-SimpleMerchTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SimpleMerchTests/Info.plist;
@@ -432,6 +648,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F533F3B01D065202005EF5E2 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F533F3AE1D065202005EF5E2 /* Debug */,
+				F533F3AF1D065202005EF5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F575F7931D03BE9200B70BB3 /* Build configuration list for PBXProject "SimpleMerch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -460,6 +685,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F533F3B21D06524D005EF5E2 /* SimpleMerch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F533F3B31D06524D005EF5E2 /* SimpleMerch.xcdatamodel */,
+			);
+			currentVersion = F533F3B31D06524D005EF5E2 /* SimpleMerch.xcdatamodel */;
+			path = SimpleMerch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F575F7901D03BE9200B70BB3 /* Project object */;
 }
