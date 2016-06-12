@@ -23,6 +23,11 @@
 /* Begin PBXBuildFile section */
 		294A1E7771F659E0BF56644D /* libPods-SimpleMerch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03997255BA6C9923E7CDDB88 /* libPods-SimpleMerch.a */; };
 		68677BE8AF1A420167EA9697 /* libPods-SimpleMerchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EB72AC97881747976FBC22 /* libPods-SimpleMerchTests.a */; };
+		F52DE8FF1D0C837600A83FD7 /* SMCategoryHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DE8FE1D0C837600A83FD7 /* SMCategoryHeaderCollectionReusableView.m */; };
+		F52DE9031D0C947300A83FD7 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DE9021D0C947300A83FD7 /* NSString+Additions.m */; };
+		F533F3A21D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3A11D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m */; };
+		F533F3A51D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3A41D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m */; };
+		F533F3A81D04D0B6005EF5E2 /* SMGlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3A71D04D0B6005EF5E2 /* SMGlobalConstants.m */; };
 		F533F3B41D06524D005EF5E2 /* SimpleMerch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F533F3B21D06524D005EF5E2 /* SimpleMerch.xcdatamodeld */; };
 		F533F3CC1D06558D005EF5E2 /* SMAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3C41D06558D005EF5E2 /* SMAmount.m */; };
 		F533F3CD1D06558D005EF5E2 /* SMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F533F3C61D06558D005EF5E2 /* SMCategory.m */; };
@@ -35,7 +40,7 @@
 		F575F7AB1D03BE9200B70BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F575F7AA1D03BE9200B70BB3 /* Assets.xcassets */; };
 		F575F7AE1D03BE9200B70BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F575F7AC1D03BE9200B70BB3 /* LaunchScreen.storyboard */; };
 		F575F7B91D03BE9200B70BB3 /* SimpleMerchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7B81D03BE9200B70BB3 /* SimpleMerchTests.m */; };
-		F575F7CB1D03C05400B70BB3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7C81D03C05400B70BB3 /* FirstViewController.m */; };
+		F575F7CB1D03C05400B70BB3 /* SMMerchandiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7C81D03C05400B70BB3 /* SMMerchandiseViewController.m */; };
 		F575F7CC1D03C05400B70BB3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F575F7CA1D03C05400B70BB3 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,16 @@
 		8AEA6F98FE03282D35FF4A18 /* Pods-SimpleMerch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMerch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMerch/Pods-SimpleMerch.debug.xcconfig"; sourceTree = "<group>"; };
 		E02A29E38125BC021803C1E6 /* Pods-SimpleMerch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMerch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMerch/Pods-SimpleMerch.release.xcconfig"; sourceTree = "<group>"; };
 		F50F02329BF8EF5023CFFE84 /* Pods-SimpleMerchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMerchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMerchTests/Pods-SimpleMerchTests.release.xcconfig"; sourceTree = "<group>"; };
+		F52DE8FD1D0C837600A83FD7 /* SMCategoryHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryHeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		F52DE8FE1D0C837600A83FD7 /* SMCategoryHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryHeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		F52DE9011D0C947300A83FD7 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		F52DE9021D0C947300A83FD7 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		F533F3A01D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		F533F3A11D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		F533F3A31D04C8FC005EF5E2 /* SMNewMerchandiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMNewMerchandiseViewController.h; sourceTree = "<group>"; };
+		F533F3A41D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMNewMerchandiseViewController.m; sourceTree = "<group>"; };
+		F533F3A61D04D0B6005EF5E2 /* SMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMGlobalConstants.h; sourceTree = "<group>"; };
+		F533F3A71D04D0B6005EF5E2 /* SMGlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMGlobalConstants.m; sourceTree = "<group>"; };
 		F533F3B31D06524D005EF5E2 /* SimpleMerch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleMerch.xcdatamodel; sourceTree = "<group>"; };
 		F533F3C31D06558D005EF5E2 /* SMAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAmount.h; sourceTree = "<group>"; };
 		F533F3C41D06558D005EF5E2 /* SMAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAmount.m; sourceTree = "<group>"; };
@@ -77,8 +92,8 @@
 		F575F7B41D03BE9200B70BB3 /* SimpleMerchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMerchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F575F7B81D03BE9200B70BB3 /* SimpleMerchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleMerchTests.m; sourceTree = "<group>"; };
 		F575F7BA1D03BE9200B70BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F575F7C71D03C05400B70BB3 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F575F7C81D03C05400B70BB3 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F575F7C71D03C05400B70BB3 /* SMMerchandiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMerchandiseViewController.h; sourceTree = "<group>"; };
+		F575F7C81D03C05400B70BB3 /* SMMerchandiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMerchandiseViewController.m; sourceTree = "<group>"; };
 		F575F7C91D03C05400B70BB3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		F575F7CA1D03C05400B70BB3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +138,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F52DE9001D0C946500A83FD7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F52DE9011D0C947300A83FD7 /* NSString+Additions.h */,
+				F52DE9021D0C947300A83FD7 /* NSString+Additions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F533F39F1D03D49E005EF5E2 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F533F3A01D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.h */,
+				F533F3A11D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m */,
+				F52DE8FD1D0C837600A83FD7 /* SMCategoryHeaderCollectionReusableView.h */,
+				F52DE8FE1D0C837600A83FD7 /* SMCategoryHeaderCollectionReusableView.m */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		F533F3B51D0654C5005EF5E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,12 +199,12 @@
 		F575F78F1D03BE9200B70BB3 = {
 			isa = PBXGroup;
 			children = (
-				F533F3D01D0655D0005EF5E2 /* Podfile */,
 				F575F79A1D03BE9200B70BB3 /* SimpleMerch */,
 				F575F7B71D03BE9200B70BB3 /* SimpleMerchTests */,
-				F575F7991D03BE9200B70BB3 /* Products */,
-				5FA4CD5828C9C2D27E6F2EC5 /* Pods */,
 				8EF4830E8A3B5FAC9F76883F /* Frameworks */,
+				F533F3D01D0655D0005EF5E2 /* Podfile */,
+				5FA4CD5828C9C2D27E6F2EC5 /* Pods */,
+				F575F7991D03BE9200B70BB3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,14 +222,16 @@
 			children = (
 				F575F79E1D03BE9200B70BB3 /* AppDelegate.h */,
 				F575F79F1D03BE9200B70BB3 /* AppDelegate.m */,
+				F575F7AA1D03BE9200B70BB3 /* Assets.xcassets */,
+				F52DE9001D0C946500A83FD7 /* Categories */,
+				F533F39F1D03D49E005EF5E2 /* CollectionViewCells */,
+				F575F7AF1D03BE9200B70BB3 /* Info.plist */,
+				F575F7AC1D03BE9200B70BB3 /* LaunchScreen.storyboard */,
+				F575F7A71D03BE9200B70BB3 /* Main.storyboard */,
 				F533F3B51D0654C5005EF5E2 /* Model */,
 				F541C0E11D03C73F005DA64F /* Protocols */,
-				F575F7A71D03BE9200B70BB3 /* Main.storyboard */,
-				F575F7C61D03C05400B70BB3 /* ViewControllers */,
-				F575F7AA1D03BE9200B70BB3 /* Assets.xcassets */,
-				F575F7AC1D03BE9200B70BB3 /* LaunchScreen.storyboard */,
-				F575F7AF1D03BE9200B70BB3 /* Info.plist */,
 				F575F79B1D03BE9200B70BB3 /* Supporting Files */,
+				F575F7C61D03C05400B70BB3 /* ViewControllers */,
 			);
 			path = SimpleMerch;
 			sourceTree = "<group>";
@@ -204,6 +241,8 @@
 			children = (
 				F575F79C1D03BE9200B70BB3 /* main.m */,
 				F533F3B21D06524D005EF5E2 /* SimpleMerch.xcdatamodeld */,
+				F533F3A61D04D0B6005EF5E2 /* SMGlobalConstants.h */,
+				F533F3A71D04D0B6005EF5E2 /* SMGlobalConstants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,10 +259,12 @@
 		F575F7C61D03C05400B70BB3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F575F7C71D03C05400B70BB3 /* FirstViewController.h */,
-				F575F7C81D03C05400B70BB3 /* FirstViewController.m */,
+				F575F7C71D03C05400B70BB3 /* SMMerchandiseViewController.h */,
+				F575F7C81D03C05400B70BB3 /* SMMerchandiseViewController.m */,
 				F575F7C91D03C05400B70BB3 /* SecondViewController.h */,
 				F575F7CA1D03C05400B70BB3 /* SecondViewController.m */,
+				F533F3A31D04C8FC005EF5E2 /* SMNewMerchandiseViewController.h */,
+				F533F3A41D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -286,6 +327,7 @@
 					};
 					F575F7971D03BE9200B70BB3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 742749KN9U;
 					};
 					F575F7B31D03BE9200B70BB3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -448,12 +490,17 @@
 				F533F3CD1D06558D005EF5E2 /* SMCategory.m in Sources */,
 				F533F3CE1D06558D005EF5E2 /* _SMAmount.m in Sources */,
 				F533F3CC1D06558D005EF5E2 /* SMAmount.m in Sources */,
+				F533F3A81D04D0B6005EF5E2 /* SMGlobalConstants.m in Sources */,
+				F52DE8FF1D0C837600A83FD7 /* SMCategoryHeaderCollectionReusableView.m in Sources */,
 				F575F7CC1D03C05400B70BB3 /* SecondViewController.m in Sources */,
 				F575F7A01D03BE9200B70BB3 /* AppDelegate.m in Sources */,
-				F575F7CB1D03C05400B70BB3 /* FirstViewController.m in Sources */,
+				F52DE9031D0C947300A83FD7 /* NSString+Additions.m in Sources */,
 				F533F3CF1D06558D005EF5E2 /* _SMCategory.m in Sources */,
 				F533F3B41D06524D005EF5E2 /* SimpleMerch.xcdatamodeld in Sources */,
+				F575F7CB1D03C05400B70BB3 /* SMMerchandiseViewController.m in Sources */,
 				F575F79D1D03BE9200B70BB3 /* main.m in Sources */,
+				F533F3A21D03D4B7005EF5E2 /* SMCategoryCollectionViewCell.m in Sources */,
+				F533F3A51D04C8FC005EF5E2 /* SMNewMerchandiseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,11 +645,14 @@
 			baseConfigurationReference = 8AEA6F98FE03282D35FF4A18 /* Pods-SimpleMerch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = SimpleMerch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.seionicllc.SimpleMerch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seionicllc.simplemerch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -611,11 +661,14 @@
 			baseConfigurationReference = E02A29E38125BC021803C1E6 /* Pods-SimpleMerch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = SimpleMerch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.seionicllc.SimpleMerch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seionicllc.simplemerch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

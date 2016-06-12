@@ -6,10 +6,9 @@
 //  Copyright © 2016 Seiler Hagan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
-@interface FirstViewController : UIViewController
-
+@interface SMMerchandiseViewController : UICollectionViewController
 
 @end
 
