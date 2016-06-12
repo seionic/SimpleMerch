@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="SMAmount" representedClassName="SMAmount" syncable="YES">
+        <attribute name="amountTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="amountValue" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SMCategory" inverseName="amounts" inverseEntity="SMCategory" syncable="YES"/>
+    </entity>
+    <entity name="SMCategory" representedClassName="SMCategory" syncable="YES">
+        <attribute name="categoryImageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="amounts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SMAmount" inverseName="category" inverseEntity="SMAmount" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SMCategory" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="SMAmount" positionX="-54" positionY="18" width="128" height="90"/>
+    </elements>
+</model>
