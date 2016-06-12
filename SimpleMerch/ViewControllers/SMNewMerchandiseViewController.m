@@ -29,10 +29,10 @@ typedef enum NewMerchTextFieldTags {
     SMAMOUNT
 } NewMerchTextFieldTags;
 
-@interface SMNewMerchandiseViewController () <UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
+@interface SMNewMerchandiseViewController () <UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIToolbar *pickerViewToolbar;
 @property (weak, nonatomic) IBOutlet UIPickerView *categoryPickerView;
-@property (weak, nonatomic) IBOutlet UIButton *imageButton;
+@property (weak, nonatomic) IBOutlet UIImageView *merchImageView;
 @property (weak, nonatomic) IBOutlet UIButton *chooseCategoryButton;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *amountTextField;
@@ -43,6 +43,7 @@ typedef enum NewMerchTextFieldTags {
 @property (weak, nonatomic) IBOutlet UIButton *largeButton;
 @property (weak, nonatomic) IBOutlet UIButton *extraLargeButton;
 @property (weak, nonatomic) IBOutlet UIButton *extraExtraLargeButton;
+@property (weak, nonatomic) IBOutlet UILabel *imageSelectLabel;
 @property (nonatomic) NSMutableArray *amountSizesArray;
 @property (nonatomic) NSArray *categoryTitles;
 @property (nonatomic) NSString *currentCategoryTitle;
@@ -62,6 +63,11 @@ typedef enum NewMerchTextFieldTags {
     self.nameTextField.tag = SMNAME;
     self.amountTextField.delegate = self;
     self.amountTextField.tag = SMAMOUNT;
+
+    UITapGestureRecognizer *selectImageView = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(selectMerchandiseImage:)];
+    selectImageView.numberOfTapsRequired = 1;
+    selectImageView.numberOfTouchesRequired = 1;
+    [self.merchImageView addGestureRecognizer:selectImageView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -141,7 +147,23 @@ typedef enum NewMerchTextFieldTags {
 
 #pragma mark - Selecting Image
 
-- (IBAction)selectMerchandiseImage:(id)sender {
+- (void)selectMerchandiseImage:(id)sender {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.delegate = self;
+    imagePicker.allowsEditing = NO;
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    self.currentImage = info[UIImagePickerControllerOriginalImage];
+    [self.merchImageView setImage:self.currentImage];
+    self.imageSelectLabel.hidden = YES;
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Dismissing Picker View
