@@ -8,14 +8,6 @@
 
 @import UIKit;
 
-#import "SMCategoryTypePickerProtocol.h"
-
-@interface SMNewMerchandiseViewController : UIViewController <SMCategoryTypePickerProtocol>
-@property (strong, nonatomic) NSString    *currentlySelectedCategoryType;
-
-@property (weak, nonatomic  ) IBOutlet UITextField *categoryAmountTextField;
-@property (weak, nonatomic  ) IBOutlet UIButton    *categoryImageButton;
-@property (weak, nonatomic  ) IBOutlet UITextField *categoryNameTextField;
-@property (weak, nonatomic  ) IBOutlet UIButton    *categoryTypeButton;
+@interface SMNewMerchandiseViewController : UIViewController
 
 @end
